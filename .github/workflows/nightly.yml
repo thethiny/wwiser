@@ -45,7 +45,7 @@ jobs:
         with:
           files: ./bin/wwiser.pyz
           name: ${{ env.WWISER_VERSION}}-nightly
-          tag_name: ${{env.WWISER_VERSION}}-nightly
+          tag_name: latest-nightly
           prerelease: true
         env:
           WWISER_VERSION: v${{ steps.release_version.outputs.wwiser_version }}

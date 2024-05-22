@@ -45,5 +45,6 @@ jobs:
           files: ./bin/wwiser.pyz
           name: ${{ env.WWISER_VERSION}}
           tag_name: ${{env.WWISER_VERSION}}
+          # body_path: /path/to/CHANGELOG.TXT # If not present then it's latest commit message
         env:
           WWISER_VERSION: ${{ steps.release_version.outputs.wwiser_version }}
